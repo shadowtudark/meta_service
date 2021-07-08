@@ -9,7 +9,7 @@ import (
 var (
 	UserRepository user.Repository
 )
-//Init instantiate the service
+// Init instantiate the service
 func Init()  {
 	UserRepository = impl.NewMysqlImpl(model.MysqlHandler)
 }

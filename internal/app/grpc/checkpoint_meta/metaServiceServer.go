@@ -3,9 +3,7 @@ package checkpoint_meta
 
 import (
 	"context"
-    
     "meta/pb/checkpoint_meta"
-    
 )
 
 type MetaServiceServer struct{}
