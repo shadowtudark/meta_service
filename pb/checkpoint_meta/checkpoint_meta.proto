@@ -1,0 +1,29 @@
+syntax = "proto3";
+package hello;
+option go_package = ".;checkpoint_meta";
+
+
+message GetLatestVersionRequest {
+  string jobId = 1;
+}
+
+message GetLatestVersionResponse {
+  int32 version = 1;
+}
+
+
+message UpdatePartitionRequest {
+  string jobId = 1;
+  string partition_num = 2;
+  string leader = 3;
+  repeated string followers = 4;
+}
+
+message UpdatePartitionResponse {
+    string results = 1;
+}
+
+service MetaService {
+  rpc GetLatestVersion(GetLatestVersionRequest) returns (GetLatestVersionRequest){}
+  rpc UpdatePartition(UpdatePartitionRequest) returns (UpdatePartitionResponse){}
+}
