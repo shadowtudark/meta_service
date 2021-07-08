@@ -9,7 +9,7 @@ import (
 	"github.com/douyu/jupiter/pkg/xlog"
 	"github.com/labstack/echo/v4"
 	//"meta/internal/app/grpc/greeter"
-	"meta/internal/app/handler"
+	"nebula/internal/app/handler"
 	"time"
 )
 
