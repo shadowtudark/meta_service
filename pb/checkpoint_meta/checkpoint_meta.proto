@@ -1,5 +1,5 @@
 syntax = "proto3";
-package hello;
+package checkpoint_meta;
 option go_package = ".;checkpoint_meta";
 
 
